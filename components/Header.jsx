@@ -43,10 +43,6 @@ export default function Header({ isloggedin }) {
         <Link to="login" className="login-link">
           <img src={imageUrl} className="login-icon" />
         </Link>
-
-        <button onClick={fakeLogOut}>
-          <IoIosLogOut />
-        </button>
       </nav>
     </header>
   );

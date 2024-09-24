@@ -760,3 +760,23 @@ img.graph {
   color: #ff8c38;
   margin-right: 5px;
 }
+
+@media screen and (min-width: 768px) {
+  .about-page-container,
+  .van-list-container,
+  .van-detail-container,
+  .host-income,
+  .host-nav,
+  header,
+  .host-vans-container {
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  .host-dashboard,
+  .host-reviews {
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 2em;
+  }
+}
