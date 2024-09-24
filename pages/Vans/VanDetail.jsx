@@ -35,7 +35,7 @@ export default function VanDetail() {
   }, [id]);
 
   if (loading) {
-    return <h1>Loading...</h1>;
+    return <div class="spinner"></div>;
   }
 
   if (error) {
