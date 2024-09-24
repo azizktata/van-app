@@ -35,7 +35,7 @@ export default function HostVans() {
   ));
 
   if (loading) {
-    return <h1>Loading...</h1>;
+    return <div class="spinner"></div>;
   }
 
   if (error) {
@@ -46,11 +46,7 @@ export default function HostVans() {
     <section className="host-vans-container">
       <h1 className="host-vans-title">Your listed vans</h1>
       <div className="host-vans-list">
-        {vans.length > 0 ? (
-          <section>{hostVansEls}</section>
-        ) : (
-          <h2>Loading...</h2>
-        )}
+        {vans.length > 0 && <section>{hostVansEls}</section>}
       </div>
     </section>
   );

@@ -512,6 +512,7 @@ i[class*="van-type-"] {
   flex-direction: column;
   align-items: center;
   padding-inline: 27px;
+  margin-top: 10em;
 }
 
 .login-form {
@@ -552,6 +553,13 @@ i[class*="van-type-"] {
   color: white;
   font-family: "Inter", sans-serif;
   cursor: pointer;
+  font-size: 1.125rem;
+  transform: translate(0, 0);
+  transition: transform 0.2s;
+}
+.login-form > button:focus,
+.login-form > button:hover {
+  transform: translate(1px, 1px);
 }
 
 .login-form > button:disabled {
@@ -757,6 +765,25 @@ img.graph {
   color: #ff8c38;
   margin-right: 5px;
 }
+.spinner {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #ff8c38; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  margin: 0 auto;
+  margin-top: 20em;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
 @media screen and (min-width: 768px) {
   .about-page-container,
@@ -771,7 +798,8 @@ img.graph {
   }
 
   .host-dashboard,
-  .host-reviews {
+  .host-reviews,
+  .host-van-details {
     margin: 0 auto;
     width: 80%;
     margin-top: 2em;

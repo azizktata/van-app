@@ -25,7 +25,7 @@ export default function HostVanDetail() {
   }, [id]);
 
   if (loading) {
-    return <h1>Loading...</h1>;
+    return <div class="spinner"></div>;
   }
 
   if (error) {
@@ -39,7 +39,7 @@ export default function HostVanDetail() {
   };
 
   return (
-    <section>
+    <section className="host-van-details">
       <Link to=".." relative="path" className="back-button">
         &larr; <span>Back to all vans</span>
       </Link>
