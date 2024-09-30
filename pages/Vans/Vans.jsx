@@ -63,10 +63,6 @@ export default function Vans() {
     });
   }
 
-  if (loading) {
-    return <div class="spinner"></div>;
-  }
-
   if (error) {
     return <h1>There was an error: {error.message}</h1>;
   }
@@ -106,7 +102,9 @@ export default function Vans() {
           </button>
         ) : null}
       </div>
-      <div className="van-list">{vanElements}</div>
+      <div className="van-list">
+        {loading ? <div class="spinner"></div> : vanElements}
+      </div>
     </div>
   );
 }

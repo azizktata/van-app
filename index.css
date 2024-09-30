@@ -240,6 +240,7 @@ main {
   justify-items: center;
   gap: 34px;
   margin-top: 57px;
+  margin-bottom: 40px;
 }
 
 .van-tile a {
